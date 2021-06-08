@@ -15,7 +15,7 @@ This repository publishes the windows release to the chocolatey package manager.
 
 To build:
 
-./build.ps1 -version 0.1.1
+./build.ps1
 
 To Install:
 
