@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>yor</id>
+    <version>0.0.29</version>
+    <packageSourceUrl>https://github.com/JamesWoolfenden/yor-choco</packageSourceUrl>
+    <owners>James Woolfenden</owners>
+    <title>yor</title>
+    <authors>Nimrod Kor</authors>
+    <projectUrl>https://github.com/bridgecrewio/yor</projectUrl>
+    <copyright>2021 Bridgecrew</copyright>
+   <projectSourceUrl>https://github.com/bridgecrewio/yor</projectSourceUrl>
+    <docsUrl>https://www.yor.io</docsUrl>
+    <tags>yor cloud infrastructure</tags>
+    <summary>__REPLACE__</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
