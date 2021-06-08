@@ -4,7 +4,7 @@
   <metadata>
     <id>yor</id>
     <version>0.0.29</version>
-    <packageSourceUrl>https://github.com/JamesWoolfenden/yor-choco</packageSourceUrl>
+    <packageSourceUrl>https://github.com/bridgecrewio/yor-choco</packageSourceUrl>
     <owners>James Woolfenden</owners>
     <title>yor</title>
     <authors>Nimrod Kor</authors>
