@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/bridgecrewio/yor/master/docs/yor-logo.png?" width="350">
 
-[![Maintained by Bridgecrew.io](https://img.shields.io/badge/maintained%20by-bridgecrew.io-blueviolet)](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=yor) 
+[![Maintained by Bridgecrew.io](https://img.shields.io/badge/maintained%20by-bridgecrew.io-blueviolet)](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=yor)
 ![golangci-lint](https://github.com/bridgecrewio/yor/workflows/tests/badge.svg)
 [![security](https://github.com/bridgecrewio/yor/actions/workflows/security.yml/badge.svg)](https://github.com/bridgecrewio/yor/actions/workflows/security.yml)
 <a href='https://github.com/jpoles1/gopherbadger' target='_blank'>![gopherbadger-tag-do-not-edit](https://img.shields.io/badge/Go%20Coverage-82%25-brightgreen.svg?longCache=true&style=flat)</a>
@@ -10,14 +10,14 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/bridgecrew/yor.svg)](https://hub.docker.com/r/bridgecrew/yor)
 [![GitHub All Releases](https://img.shields.io/github/downloads/bridgecrewio/yor/total)](https://github.com/bridgecrewio/yor/releases)
 
-Yor is an open-source tool that helps add informative and consistent tags across infrastructure-as-code frameworks such as Terraform, CloudFormation, and Serverless. 
+Yor is an open-source tool that helps add informative and consistent tags across infrastructure-as-code frameworks such as Terraform, CloudFormation, and Serverless.
 
 Yor is built to run as a [GitHub Action](https://github.com/bridgecrewio/yor-action) automatically adding consistent tagging logics to your IaC. Yor can also run as a pre-commit hook and a standalone CLI.
 
 ## Features
 * Apply tags and labels on infrastructure as code directory
 * Tracing: ```yor_trace``` tag enables simple attribution between an IaC resource block and a running cloud resource.
-* Change management: git-based tags automatically add org, repo, commit and modifier details on every resource block.  
+* Change management: git-based tags automatically add org, repo, commit and modifier details on every resource block.
 * Custom taggers: user-defined tagging logics can be added to run using Yor.
 * Skips: inline annotations enable developers to exclude paths that should not be tagged.
 
@@ -167,11 +167,11 @@ yor tag -d path/to/files --skip-dirs path/to/files/skip,path/to/files/another/sk
 ```sh
 yor list-tag-groups
  # List tag classes that are built into yor.
- 
+
 yor list-tags
  # List all the tags built into yor
 yor list-tags --tag-groups git
- 
+
  # List all the tags built into yor under the tag group git
 ```
 ### What is Yor trace?
@@ -182,7 +182,7 @@ Having a yor_trace in place can help with tracing code block to its cloud provis
 See demo [here](#Trace-IaC-code-to-cloud-resource)
 ## Contributing
 
-Contribution is welcomed! 
+Contribution is welcomed!
 
 We are working on extending Yor and adding more parsers (to support additional IaC frameworks) and more taggers (to tag using other contextual data).
 
