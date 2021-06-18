@@ -21,3 +21,7 @@ jobs:
         shell: powershell
         env:
           CHOCOPUSHKEY: ${{ secrets.CHOCOPUSHKEY }}
+        continue-on-error: true  
+      - uses: actions/upload-artifact@v2
+        with:
+          path: *.nupkg
