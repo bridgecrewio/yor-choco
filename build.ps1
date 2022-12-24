@@ -1,8 +1,8 @@
 $outfile="yor.zip"
-$version=(Invoke-Webrequest https://api.github.com/repos/bridgecrewio/yor/releases/latest|convertfrom-json).name
+$version=(Invoke-RestMethod https://api.github.com/repos/bridgecrewio/yor/releases/latest).name
 
 Write-Host "$(get-date) - downloading release $version"
-Invoke-WebRequest -uri "https://github.com/bridgecrewio/yor/releases/download/$($version)/yor-$($version)-windows-amd64.zip" -OutFile $outfile
+Invoke-WebRequest -uri "https://github.com/bridgecrewio/yor/releases/download/$($version)/yor_$($version)_windows_amd64.zip" -OutFile $outfile
 tar -xvf $outfile -C .\tools\
 
 Write-Host "$(get-date) - packing"
