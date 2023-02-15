@@ -18,7 +18,9 @@
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="tools\**" target="tools" />
+    <file src="tools\yor.exe" target="tools" />
+    <file src="tools\license.txt" target="tools" />
+    <file src="tools\VERIFICATION.txt" target="tools" />
     <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
