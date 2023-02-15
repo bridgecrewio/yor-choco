@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 $outfile="yor.zip"
 $version=(Invoke-RestMethod https://api.github.com/repos/bridgecrewio/yor/releases/latest).name
 
